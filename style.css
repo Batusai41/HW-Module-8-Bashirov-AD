@@ -1,3 +1,9 @@
+body {
+    background: url(https://unsplash.com/photos/Iq9SaJezkOE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NjV8fGdhbWV8ZW58MHx8fHwxNjUyNTQyOTY2&force=true);
+    margin: 0;
+    padding: 0;
+}
+
 .game-card {
     height: 100vh;
     font-family: 'Open Sans', monospace;
@@ -37,20 +43,30 @@
 }
 
 .number_txt {
-    background-color: rgb(187, 188, 187);
+    background-color: rgb(188, 188, 187);
     color: rgb(13, 1, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 500px;
-    height: 200px;
-    top: 30%;
-    margin-top: -40px;
+    max-width: 375px;
+    height: 650px;
+    top: 25%;
+    margin-top: -10px;
     margin: 0 auto;
     padding: 30px;
     position: relative;
-    border-radius: 3%;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+    border-radius: 30px;
+    border-style: groove;
+}
 
+.number_txt:hover {
+    box-shadow: 0 0 0 0 rgba(206, 218, 244, 0);
+    background-position: 0 0;
 }
 
 #number_flex {
@@ -61,7 +77,8 @@
 
 .number_txt {
     font-size: 20px;
-    color: rgb(143, 16, 94);
+    color: rgb(143, 20, 16);
+    font-weight: bold;
 }
 
 #button,
@@ -69,7 +86,7 @@
 #button3 {
     width: 100px;
     height: 50px;
-    background-color: rgb(195, 207, 206);
+    background-color: rgb(202, 207, 195);
     border: rgb(130, 68, 20) solid;
     border-radius: 5%;
     margin-top: 50px;
@@ -79,11 +96,10 @@
 #button4 {
     width: 150px;
     height: 50px;
-    background-color: rgb(209, 219, 221);
-    border: rgb(217, 225, 219) solid;
+    background-color: rgb(221, 221, 209);
+    border: rgb(224, 225, 217) solid;
     border-radius: 5%;
     margin-top: 50px;
-
 }
 
 #btnRetry {
@@ -91,4 +107,66 @@
     height: 50px;
     border: rgb(44, 18, 95) solid;
     border-radius: 5%;
+}
+
+.btn-group {
+    background-color: rgb(188, 188, 187);
+    color: rgb(13, 1, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    height: 400px;
+    top: 35%;
+    margin-top: -40px;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    border-radius: 3%;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+}
+
+.btn-group:hover {
+    box-shadow: 0 0 0 0 rgba(206, 218, 244, 0);
+    background-position: 0 0;
+}
+
+#btnLess,
+#btnOver,
+#btnEqual {
+    background-color: rgb(94, 245, 7);
+    color: rgb(4, 0, 8);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btnLess:hover {
+    animation: both;
+    background: local;
+    background-size: 10px 10px;
+    color: violet;
+}
+
+#btnOver:hover {
+    animation: both;
+    background: local;
+    background-size: 10px 10px;
+    color: #FF50E5;
+}
+
+#btnEqual:hover {
+    animation: both;
+    background: local;
+    background-size: 10px 10px;
+    color: #FF50E5;
+}
+
+.card-header {
+    background-color: rgb(188, 188, 187);
+    font-weight: bold;
+    font-size: larger;
 }

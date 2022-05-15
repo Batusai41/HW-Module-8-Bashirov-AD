@@ -189,14 +189,8 @@ function game() {
                     answerField.innerText = `Слишком просто!\n\u{1F60E}`;
                     break;
             }
-            document.body.classList.add('btnEqual');
+            document.body.classList.add('Equal');
             gameRun = false;
         }
     })
 }
-
-document.getElementById('btnRetry').addEventListener('click', function () {
-    minValue = 0;
-    maxValue = 100;
-    orderNumber = 0;
-})
